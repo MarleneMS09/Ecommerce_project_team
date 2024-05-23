@@ -2,10 +2,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f8f8; /* Puedes ajustar el color de fondo según tu necesidad */
 }
 
-.left-section,
-.right-section {
+.left-section {
     display: flex;
     align-items: center;
 }
@@ -13,17 +14,41 @@
 .search-box {
     display: flex;
     align-items: center;
+    flex: 1;
+    margin: 0 20px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+}
+
+.search-box .btn_search {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-left: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.nav-options {
+    flex: 2;
 }
 
 .nav-options ul {
     list-style-type: none;
+    display: flex;
     margin: 0;
     padding: 0;
-    display: flex;
+    justify-content: center;
 }
 
 .nav-options ul li {
-    margin-right: 20px; /* Espacio entre las opciones de navegación */
+    margin-right: 20px;
 }
 
 .user_icons {
@@ -32,5 +57,6 @@
 }
 
 .user_icons i {
-    margin-right: 10px; /* Espacio entre los íconos */
+    margin-right: 10px;
+    cursor: pointer;
 }
